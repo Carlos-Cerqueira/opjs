@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 export const io = new Server(server);
 
-mongoose.connect('mongodb+srv://admin:root@cluster0.zkvuqyj.mongodb.net/')
+mongoose.connect("") // Insira a URI do Mongo.DB aqui
 	.then(() => {
 		const port = 3001;
 
